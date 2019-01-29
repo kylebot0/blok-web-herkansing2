@@ -1,0 +1,154 @@
+
+
+/*------------------login--------------------*/
+
+body {
+  background-color: rgba(0, 214, 108, 1);
+}
+
+
+main > section {
+  height: 0;
+  margin-top: 25vh;
+  padding: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  transition: all 400ms;
+  padding: 0em 1em 1em 1em;
+}
+
+legend {
+  font-size: 1.5em;
+  background-color: darkblue;
+  color: white;
+  border-radius: 20px 20px;
+  padding: 0.5em 2em 0.5em 2em;
+}
+
+label {
+  font-weight: bold;
+
+}
+
+label:last-of-type {
+  margin-top: 7.5%;
+}
+
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 400ms;
+  padding: 2.5em;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 1.5em;
+}
+
+fieldset:invalid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2em;
+}
+
+fieldset:invalid i {
+  display: none;
+}
+
+fieldset i {
+  margin-left: 45%;
+  font-size: 3em;
+  color: #00d66c
+}
+
+form input {
+  border-style: 0.5px solid grey;
+  padding: .25em;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  border-radius: 0.5rem;
+  width: 60%;
+  transition: all 200ms;
+
+}
+
+form input:valid {
+  border-color: #00d66c;
+  box-shadow: none;
+  border-style: solid;
+  border-radius: 0.5rem;
+}
+
+form input:focus {
+  transform: scale(1.1);
+}
+
+form input:invalid {
+  border-radius: 0.5rem;
+  border-style: solid lightgrey;
+  background: white;
+}
+
+form button {
+
+  font-size: 1.25em;
+  margin-top: 2em;
+  margin-left: 17%;
+  margin-right: 70%;
+  margin-bottom: 5em;
+  padding: 1em;
+  padding-bottom: 1.75em;
+  transition: all 300ms;
+
+  box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+  border-radius: 1.25em;
+  color: white;
+  background-color: #E83B6A;
+  border-style: none;
+}
+
+form button:hover {
+  background-color: #ca2b55;
+
+}
+
+@media (min-width: 700px) {
+  fieldset {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+  }
+}
+
+
+
+
+@media (max-width: 900px) {
+  form button {
+    margin-right: 65%;
+  }
+  @media (max-width: 700px) {
+    form button {
+      margin-right: 70%;
+    margin-left: 5%;
+    }
+    @media (max-width: 500px) {
+      form button {
+        margin-right: 60%;
+        margin-left: 6%;
+      }
+    }
+    @media (max-width: 400px) {
+      form button {
+        margin-right: 55%;
+        margin-left: 8%;
+      }
+    }
+  }
+}
